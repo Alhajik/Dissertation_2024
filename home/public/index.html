@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    
+      <meta charset="utf-8">
+      <title>React App</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta content="Free HTML Templates" name="keywords">
+      <meta content="Free HTML Templates" name="description">
+  
+      <!-- Favicon -->
+      <link href="img/favicon.ico" rel="icon">
+  
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+  
+      <!-- Font Awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  
+      <!-- Libraries Stylesheet -->
+      <link href="lib/animate/animate.min.css" rel="stylesheet">
+      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="css/style.css" rel="stylesheet">
+ 
+  </head>
+ 
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <body>
+      <!-- Topbar Start -->
+      <div class="container-fluid">
+         
+          <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+              <div class="col-lg-4">
+                  <a href=""><img src="img/Logo.png" alt="Company Logo"></a>
+              </div>
+              <div class="col-lg-4 col-6 text-left">
+           
+              </div>
+              <div class="col-lg-4 col-6 text-right">
+                  <p class="m-0">Customer Service</p>
+                  <h5 class="m-0">+23280319693</h5>
+              </div>
+          </div>
+      </div>
+      <!-- Topbar End -->
+  
+  
+      <!-- Navbar Start -->
+      <div class="container-fluid bg-dark mb-30">
+          <div class="row px-xl-5">
+              <div class="col-lg-3 d-none d-lg-block">
+               
+              </div>
+              <div class="col-lg-9">
+                  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
+                      <a href="" class="text-decoration-none d-block d-lg-none">
+                        <img src="img/Logo.png" alt="Company Logo">
+                      </a>
+                      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                          <div class="navbar-nav mr-auto py-0">
+                              <a href="index.html" class="nav-item nav-link active">Home</a>
+                              <a href="http://localhost:3000/best-selling" class="nav-item nav-link">Best Selling</a>
+                              <a href="http://localhost:3000/products" class="nav-item nav-link">Products</a>
+                              <a href="http://localhost:3000/events" class="nav-item nav-link">Events</a>
+                              <a href="http://localhost:3000/faq" class="nav-item nav-link">FAQ</a>
+                              <a href="contact.html" class="nav-item nav-link">Contact</a>
+                              <a href="about.html" class="nav-item nav-link">About Us</a>
+                          </div>
+                          <div class="navbar-nav ml-auto py-0 d-none d-lg-block" >
+                            <a href="http://localhost:3000/login" class="btn px-0">
+                                <i class="fas fa-heart text-white"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;"></span>
+                            </a>
+                            <a href="http://localhost:3000/login" class="btn px-0 ml-3">
+                                <i class="fas fa-shopping-cart text-white"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;"></span>
+                            </a>
+                            
+                              <div class="btn-group"  >
+                                <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <button class="dropdown-item" type="button"><a href="http://localhost:3000/login" style="color: black;">Customer</a></button>
+                                    <button class="dropdown-item" type="button"><a href="http://localhost:3000/shop-login" style="color: black;">Vendor</a></button>
+                                    <button class="dropdown-item" type="button"><a href="http://localhost:3000/admin/dashboard" style="color: black;">Admin</a></button>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+      <!-- Navbar End -->
+  
+  
+      <!-- Carousel Start -->
+      <div class="container-fluid mb-3" style="margin-top: -2.1%;">
+          <div class="row px-xl-5">
+              <div class="col-lg-8">
+                  <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#header-carousel" data-slide-to="1"></li>
+                          <li data-target="#header-carousel" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="carousel-item position-relative active" style="height: 430px;">
+                              <img class="position-absolute w-100 h-100" src="img/me.png" style="object-fit: cover;">
+                              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                  <div class="p-3" style="max-width: 700px;">
+                                      <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Choice Central</h1>
+                                      <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Discover a World of Choices – Your Ultimate Multi-Vendor Marketplace for Everything You Love!</p>
+                                      <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="http://localhost:3000/products">Shop Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item position-relative" style="height: 430px;">
+                              <img class="position-absolute w-100 h-100" src="img/Bakarr.png" style="object-fit: cover;">
+                              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                  <div class="p-3" style="max-width: 700px;">
+                                      <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">ShopUnity</h1>
+                                      <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Shop Smarter, Shop Together – Elevate Your Online Shopping Experience with Our Multi-Vendor Ecommerce Extravaganza!</p>
+                                      <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="http://localhost:3000/products" >Shop Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item position-relative" style="height: 430px;">
+                              <img class="position-absolute w-100 h-100" src="img/Husine.png" style="object-fit: cover;">
+                              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                  <div class="p-3" style="max-width: 700px;">
+                                      <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Variety Vista</h1>
+                                      <p class="mx-md-5 px-5 animate__animated animate__bounceIn">From Fashion to Electronics, Home Decor to Beauty – Unleash the Power of Variety at Your Fingertips with Our Multi-Vendor Ecommerce Destination!</p>
+                                      <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="http://localhost:3000/products">Shop Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="product-offer mb-30" style="height: 200px;">
+                      <img class="img-fluid" src="img/G.png" alt="">
+                      <div class="offer-text">
+                          <h6 class="text-white text-uppercase">Save 20%</h6>
+                          <h3 class="text-white mb-3">Grocery Offer</h3>
+                          <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="http://localhost:3000/products?category=Food%20and%20Grocery" >Shop Now</a>
+                      </div>
+                  </div>
+                  <div class="product-offer mb-30" style="height: 200px;">
+                      <img class="img-fluid" src="img/C.png" alt="">
+                      <div class="offer-text">
+                          <h6 class="text-white text-uppercase">Save 20%</h6>
+                          <h3 class="text-white mb-3">Electronics Special Offer</h3>
+                          <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="http://localhost:3000/products?category=Electronics%20and%20Appliances" >Shop Now</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Carousel End -->
+  
+  
+      <!-- Featured Start -->
+      <div class="container-fluid pt-5">
+          <div class="row px-xl-5 pb-3">
+              <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                  <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                      <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                      <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                  <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                      <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+                      <h5 class="font-weight-semi-bold m-0">Free Delivery >=Nle 10000</h5>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                  <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                      <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                      <h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                  <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                      <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+                      <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Featured End -->
+  
+  
+      <!-- Categories Start -->
+      <div class="container-fluid pt-5">
+          <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Categories</span></h2>
+          <div class="row px-xl-5 pb-3">
+             
+              <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                  <a class="text-decoration-none" href="http://localhost:3000/products?category=Food%20and%20Grocery">
+                      <div class="cat-item img-zoom d-flex align-items-center mb-4">
+                          <div class="overflow-hidden" style="width: 100px; height: 100px;">
+                              <img class="img-fluid" src="img/gc.png" alt="">
+                          </div>
+                          <div class="flex-fill pl-3">
+                              <h6>Food and Grocery</h6>
+                              
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                  <a class="text-decoration-none" href="http://localhost:3000/products?category=Electronics%20and%20Appliances">
+                      <div class="cat-item img-zoom d-flex align-items-center mb-4">
+                          <div class="overflow-hidden" style="width: 100px; height: 100px;">
+                              <img class="img-fluid" src="img/kc1.png" alt="">
+                          </div>
+                          <div class="flex-fill pl-3">
+                              <h6>Electronics and Appliances
+                            </h6>
+                               
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                  <a class="text-decoration-none" href="http://localhost:3000/products?category=Fashion%20and%20Personal%20Care">
+                      <div class="cat-item img-zoom d-flex align-items-center mb-4">
+                          <div class="overflow-hidden" style="width: 100px; height: 100px;">
+                              <img class="img-fluid" src="img/FPC.png" alt="">
+                          </div>
+                          <div class="flex-fill pl-3">
+                              <h6>Fashion and Personal Care</h6>
+                              
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                  <a class="text-decoration-none" href="http://localhost:3000/products?category=Home%20and%20Kitchen">
+                      <div class="cat-item img-zoom d-flex align-items-center mb-4">
+                          <div class="overflow-hidden" style="width: 100px; height: 100px;">
+                              <img class="img-fluid" src="img/KEC.png" alt="">
+                          </div>
+                          <div class="flex-fill pl-3">
+                              <h6>Home and Kitchen</h6>
+                               
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                  <a class="text-decoration-none" href="http://localhost:3000/products?category=Furniture%20and%20Decor">
+                      <div class="cat-item img-zoom d-flex align-items-center mb-4">
+                          <div class="overflow-hidden" style="width: 100px; height: 100px;">
+                              <img class="img-fluid" src="img/BFC.png" alt="">
+                          </div>
+                          <div class="flex-fill pl-3">
+                              <h6>Furniture and Decor</h6>
+                               
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                  <a class="text-decoration-none" href="http://localhost:3000/products?category=Jewelry%20and%20Accessories">
+                      <div class="cat-item img-zoom d-flex align-items-center mb-4">
+                          <div class="overflow-hidden" style="width: 100px; height: 100px;">
+                              <img class="img-fluid" src="img/JC.png" alt="">
+                          </div>
+                          <div class="flex-fill pl-3">
+                              <h6>Jewelry and Accessories
+                            </h6>
+                               
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                  <a class="text-decoration-none" href="http://localhost:3000/products?category=Automotive%20and%20Tools">
+                      <div class="cat-item img-zoom d-flex align-items-center mb-4">
+                          <div class="overflow-hidden" style="width: 100px; height: 100px;">
+                              <img class="img-fluid" src="img/Auto.png" alt="">
+                          </div>
+                          <div class="flex-fill pl-3">
+                              <h6>Automotive and Tools</h6>
+                               
+                          </div>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <a class="text-decoration-none" href="https://d-themes.com/wordpress/wolmart/elements/wp-content/uploads/sites/3/2021/06/category-2-1.png">
+                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
+                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
+                            <img class="img-fluid" src="img/CC.png" alt="">
+                        </div>
+                        <div class="flex-fill pl-3">
+                            <h6>Others
+                          </h6>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+      </div>
+      <!-- Categories End -->
+  
+  
+      <!-- Products Start -->
+
+      <!-- Products End -->
+  
+  
+      <!-- Offer Start -->
+      <div class="container-fluid pt-5 pb-3">
+          <div class="row px-xl-5">
+              <div class="col-md-6">
+                  <div class="product-offer mb-30" style="height: 300px;">
+                      <img class="img-fluid" src="img/CO.png" alt="">
+                      <div class="offer-text">
+                          <h6 class="text-white text-uppercase">Save 20%</h6>
+                          <h3 class="text-white mb-3">Furniture and Decor</h3>
+                          <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="http://localhost:3000/products?category=Furniture%20and%20Decor" >Shop Now</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="product-offer mb-30" style="height: 300px;">
+                      <img class="img-fluid" src="img/KO.png" alt="">
+                      <div class="offer-text">
+                          <h6 class="text-white text-uppercase">Save 20%</h6>
+                          <h3 class="text-white mb-3">Kitchen Special Offer</h3>
+                          <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="http://localhost:3000/products?category=Home%20and%20Kitchen" >Shop Now</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Offer End -->
+  
+  
+      <!-- Products Start -->
+
+      <!-- Products End -->
+  
+  
+      <!-- Vendor Start -->
+         <!-- <img src="img/Background.png" alt="" width="100%">-->
+      <!-- Vendor End -->
+  
+  
+      <!-- Footer Start -->
+
+    
+      <div class="container-fluid bg-dark text-secondary mt-5 pt-5" style="background: #000;" >
+          <div class="row px-xl-5 pt-5">
+              <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                  <img src="img/Logo.png" alt="">
+                  <p class="mb-4">
+                    Discover a world of seamless shopping at Multi Vendor Ecommerce Platform, your go-to multi-vendor ecommerce destination. We bring together top-quality products from trusted sellers, prioritizing user experience and satisfaction. </p>
+                  <div class="d-flex">
+                      <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter" style="color: white;"></i></a>
+                      <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+                      <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"style="color: white;"></i></a>
+                      <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"style="color: white;"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-8 col-md-12">
+                  <div class="row">
+                      <div class="col-md-4 mb-5">
+                          <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
+                          <div class="d-flex flex-column justify-content-start">
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                              <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                          </div>
+                      </div>
+                      <div class="col-md-4 mb-5">
+                          <h5 class="text-secondary text-uppercase mb-4">My Account</h5>
+                          <div class="d-flex flex-column justify-content-start">
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                              <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                              <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                          </div>
+                      </div>
+                      <div class="col-md-4 mb-5">
+                          <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
+                          <p>📬 Dive into the buzz with Your Newsletter! 🌟 Exclusive updates, special offers, and breaking news – all in one place. Subscribe now for a front-row seat to the latest happenings! 📧🗞️ #StayInformed #SubscribeToday</p>
+                          <form action="">
+                              <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Your Email Address">
+                                  <div class="input-group-append">
+                                      <button class="btn btn-primary" ><a href="" style="color: white;">Sign Up</a></button>
+                                  </div>
+                              </div>
+                          </form>
+                       
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+              <div class="col-md-6 px-xl-0">
+                  <p class="mb-md-0 text-center text-md-left text-secondary">
+                    © 2023 Central University Final Year Project. All rights reserved.
+
+                  </p>
+              </div>
+              
+          </div>
+      </div>
+      <!-- Footer End -->
+  
+  
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up" style="color: white;"></i></a>
+  
+  
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+      <!-- Contact Javascript File -->
+      <script src="mail/jqBootstrapValidation.min.js"></script>
+      <script src="mail/contact.js"></script>
+  
+      <!-- Template Javascript -->
+      <script src="js/main.js"></script>
+  
+  </body>
+</html>
